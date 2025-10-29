@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Navbar */
+.grocery-header {
+    width: 100%;
+    background: rgba(0,0,0,0.7  );
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.grocery-hero-content {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px 40px;
+    border-radius: 15px;
+    display: inline-block;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover Effect */
+.grocery-hero-content:hover {
+    transform: scale(1.04); /* gentle grow */
+    background-color: rgba(255, 255, 255, 0.15); /* slightly brighter on hover */
+}
+
+.grocery-hero-content h1,
+.grocery-hero-content p {
+    color: white; /* keeps text readable on hero image */
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
+
+.grocery-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #8DC63F;
+}
+
+.grocery-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.grocery-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.grocery-nav ul li a:hover {
+    color: #8DC63F;
+}
+
+.grocery-btn {
+    background-color: #8DC63F;
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.grocery-btn:hover {
+    background-color: #76b32d;
+}
+
+/* Hero Section */
+.grocery-hero {
+    background: url('./resources/main.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+
+.grocery-hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.grocery-hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* About Section */
+.grocery-about {
+    padding: 80px 60px;
+    background-color: #f9f9f9;
+}
+
+.grocery-about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.grocery-about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.grocery-about-image img:hover {
+    transform: scale(1.05);
+}
+
+.grocery-about-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.grocery-about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Quote Section */
+.grocery-quote {
+    background: url('./resources/q.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.grocery-quote-overlay {
+    background-color: rgba(0,0,0,0.4);
+    padding: 40px 60px;
+    border-radius: 20px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+}
+
+.grocery-quote h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* Footer */
+.grocery-footer {
+    background: #0d0d0d;
+    color: #bbb;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 0.9rem;
+}
+
+.grocery-footer p {
+    margin: 0;
+}
+
+/* Login / SignUp Section */
+.grocery-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('./resources/happy.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+}
+.grocery-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('./resources/store.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+}
+
+.grocery-login-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.9);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    border: 2px solid transparent; /* base border */
+}
+
+/* Hover Effect */
+.grocery-login-container:hover {
+    transform: scale(1.05); /* slight zoom */
+    box-shadow: 0 20px 40px rgba(0,0,0,0.9);
+    border: 2px solid #8DC63F; /* GroceMe green border */
+}
+
+
+.grocery-login-container h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.grocery-login-container form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.grocery-login-container form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.grocery-login-container p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.grocery-login-container p a {
+    color: #8DC63F;
+    text-decoration: none;
+}
+
+.grocery-login-container p a:hover {
+    text-decoration: underline;
+}
+
